@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C0C1C1"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+
+        <LinearLayout
+            android:id="@+id/Panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="#C0C1C1"
+            android:orientation="vertical"
+            android:padding="15dp"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:text="Discover Art"
+                android:textSize="36dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+
+            <FrameLayout
+                android:id="@+id/Paintings"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginBottom="16dp"
+                android:background="#90741E"
+                android:padding="10dp">
+
+
+                <ImageView
+                    android:id="@+id/imagePaintings"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:scaleType="fitStart"
+                    app:shapeAppearanceOverlay="@style/roundedImageView"
+                    app:srcCompat="@drawable/monalisa" />
+
+                <TextView
+                    android:id="@+id/textPaintings"
+                    android:layout_width="260dp"
+                    android:layout_height="74dp"
+                    android:layout_gravity="end"
+                    android:fontFamily="casual"
+                    android:gravity="center"
+                    android:scaleType="fitEnd"
+                    android:text="Tablolar"
+                    android:textSize="36dp" />
+
+                <Button
+                    android:id="@+id/GoToPaintings"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:background="#513C0E"
+                    android:fontFamily="casual"
+                    android:text="Keşfet" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/Architecture"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginBottom="16dp"
+                android:background="#FDFDFD"
+                android:padding="10dp">
+
+
+                <ImageView
+                    android:id="@+id/imageArchitecture"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:scaleType="fitStart"
+                    app:shapeAppearanceOverlay="@style/roundedImageView"
+                    app:srcCompat="@drawable/architecture" />
+
+                <TextView
+                    android:id="@+id/textArchitecture"
+                    android:layout_width="260dp"
+                    android:layout_height="74dp"
+                    android:layout_gravity="end"
+                    android:fontFamily="casual"
+                    android:gravity="center"
+                    android:scaleType="fitEnd"
+                    android:text="Mimariler"
+
+                    android:textSize="36dp" />
+
+                <Button
+                    android:id="@+id/GoToArchitecture"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:background="#564E3D"
+                    android:fontFamily="casual"
+                    android:text="Keşfet" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/Sculpture"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginBottom="16dp"
+                android:background="#504D4D"
+                android:padding="10dp">
+
+
+                <ImageView
+                    android:id="@+id/imageSculpture"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:scaleType="fitStart"
+                    app:shapeAppearanceOverlay="@style/roundedImageView"
+                    app:srcCompat="@drawable/sculpture" />
+
+                <TextView
+                    android:id="@+id/textSculpture"
+                    android:layout_width="260dp"
+                    android:layout_height="74dp"
+                    android:layout_gravity="end"
+                    android:fontFamily="casual"
+                    android:gravity="center"
+                    android:scaleType="fitEnd"
+                    android:text="Heykeller"
+                    android:textSize="36dp" />
+
+                <Button
+                    android:id="@+id/GoToSculpture"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:background="#BBBCB6"
+                    android:fontFamily="casual"
+                    android:text="Keşfet" />
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
